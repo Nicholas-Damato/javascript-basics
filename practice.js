@@ -2,31 +2,31 @@
 
 //Create a variable called myName that is a string data type
 
-//Code here
+var myName = 'Nicholas';
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
-//Code here
+var myAge = 22;
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
-//Code here
+var boolean = true;
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-//Code here
+var greatestFear = undefined;
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-//Code here
+var devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -35,21 +35,28 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
+function greeting(){
+  console.log('Hello', myName);
+}
 
+greeting();
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-//Code Here
+var newGreeting = function() {
+  console.log('Hello', myName);
+}
+
+newGreeting();
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+var array1 = ['apples', 'milk', 'eggs', 'bread'];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -58,12 +65,14 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+var dog = {name: 'Billy', color: 'black', age: 6, goodBoy: true};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+var devMountainClassPet = dog.name;
+
+console.log(devMountainClassPet)
 
 //////////////////PROBLEM 10////////////////////
 
@@ -74,20 +83,36 @@
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-// Code here
 
+  function nameCheck(nameGoesHere){
+    if ( nameGoesHere == "Steven"){
+    return console.log('What is up', nameGoesHere,'?')
+    }
+    if ( nameGoesHere == "Bryan"){
+      return console.log('Hey', nameGoesHere, '!')
+    }
+    return console.log('Cool name,', nameGoesHere)
+}
+
+nameCheck('Bryan');
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+var add = function(num1, num2){
+      return (num1 + num2);
+}
+
+console.log(add(5,6))
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+var mathSum = add(3,4);
+
+console.log(mathSum)
 
 //////////////////PROBLEM 12////////////////////
 
@@ -98,7 +123,35 @@
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color){
+  if (color == 'red'){
+    return console.log(color, 'is a great color')
+  }
+  if (color == 'green'){
+    return console.log(color, 'is a solid favorite color')
+  }
+  if (color == 'black'){
+    return console.log('so trendy')
+  }
+  else if (color !== 'black', 'red', 'green'){
+    return console.log('You need to evalute your favorite color choice')
+  }
+}
+
+faveColorFinder('black')
+
+// This is just practice with the else statement
+function favCarMake(car){
+  if (car == 'Nissan'){
+    return console.log('Yes that is your favorite car make')
+  }
+  else {
+    return console.log('That is not your favorite car make')
+  }
+}
+favCarMake('Nissan')
+// SORRY FOR THE CLUSTER, JUST TESTING
+
 
 //////////////////PROBLEM 13////////////////////
 
