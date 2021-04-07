@@ -2,31 +2,31 @@
 
 //Create a variable called myName that is a string data type
 
-var myName = 'Nicholas';
+let myName = 'Nicholas';
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
-var myAge = 22;
+let myAge = 22;
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
-var lovesCode = true;
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-var greatestFear = undefined;
+let greatestFear = undefined;
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-var devMountainGoal = null;
+let devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -35,21 +35,25 @@ var devMountainGoal = null;
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting(){
-  console.log('Hello', myName);
-}
-
+function greeting(name){
+    if (name === 'Trogdor'){
+      return 'Hello, Trogdor';
+} else return 'Hello, undefined' 
+} 
+console.log(greeting('Trogdor'))
 greeting();
+
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-var newGreeting = function() {
-  console.log('Hello', myName);
-}
+var newGreeting = function(name){
+  if (name === 'Trogdor'){
+    return 'Hello, Trogdor';
+} else return 'Hello, undefined' 
+} 
 
-newGreeting();
 
 //////////////////PROBLEM 8////////////////////
 
@@ -86,12 +90,12 @@ console.log(devMountainClassPet)
 
   function nameCheck(nameGoesHere){
     if ( nameGoesHere === 'Steven'){
-    return console.log('What is up', nameGoesHere + '?')
+    return 'What is up Steven?'
     }
     else if ( nameGoesHere === "Bryan"){
-      return console.log('Hey', nameGoesHere + '!')
+      return 'Hey Bryan!'
     }
-    return console.log('Cool name,', nameGoesHere)
+    return 'Cool name, Joe'
 }
 
 nameCheck('Nick');
@@ -125,16 +129,16 @@ console.log(mathSum)
 
 function faveColorFinder(color){
   if (color == 'red'){
-    return console.log(color, 'is a great color')
+    return 'red is a great color'
   }
   if (color == 'green'){
-    return console.log(color, 'is a solid favorite color')
+    return 'green is a solid favorite color'
   }
   if (color == 'black'){
-    return console.log('so trendy')
+    return 'so trendy'
   }
   else if (color !== 'black', 'red', 'green'){
-    return console.log('You need to evalute your favorite color choice')
+    return 'you need to evaluate your favorite color choice'
   }
 }
 
@@ -190,13 +194,13 @@ let pondScope = ["duck","realDuck","rubberDuck"];
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
+let age = myAge;
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
-
+age += 1;
+console.log(age)
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+age = 999;
