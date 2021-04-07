@@ -14,7 +14,7 @@ var myAge = 22;
 
 //Create a variable called lovesCode that is a boolean data type
 
-var boolean = true;
+var lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 
@@ -56,7 +56,7 @@ newGreeting();
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var array1 = ['apples', 'milk', 'eggs', 'bread'];
+var groceries = ['apples', 'milk', 'eggs', 'bread'];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -85,16 +85,16 @@ console.log(devMountainClassPet)
 
 
   function nameCheck(nameGoesHere){
-    if ( nameGoesHere == "Steven"){
-    return console.log('What is up', nameGoesHere,'?')
+    if ( nameGoesHere === 'Steven'){
+    return console.log('What is up', nameGoesHere + '?')
     }
-    if ( nameGoesHere == "Bryan"){
-      return console.log('Hey', nameGoesHere, '!')
+    else if ( nameGoesHere === "Bryan"){
+      return console.log('Hey', nameGoesHere + '!')
     }
     return console.log('Cool name,', nameGoesHere)
 }
 
-nameCheck('Bryan');
+nameCheck('Nick');
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
@@ -175,16 +175,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck","rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck","realDuck","rubberDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
